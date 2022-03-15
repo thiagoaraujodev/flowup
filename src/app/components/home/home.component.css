@@ -1,0 +1,542 @@
+:host {
+  font-family: Gotham, sans-serif !important;
+}
+.topo {
+  height: 100%;
+  margin-top: 82px;
+  padding-bottom: 72px;
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/*--------------------*/
+.ajudar-empresa header > h3 {
+  margin-top: 53px;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #5f6e76;
+}
+.ajudar-empresa header > p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2c404a;
+}
+.ajudar-empresa > .container-fluid > .row .row .card-time {
+  display: none;
+}
+.ajudar-empresa > .container-fluid > .row .row .card-time,
+.ajudar-empresa > .container-fluid > .row .row img {
+  margin-top: 37px;
+}
+.ajudar-empresa > .container-fluid > .row .row .card-time .cdk-drag {
+  cursor: grab;
+}
+
+/*----------*/
+.equipe-produtiva {
+  background-color: #f3f9ff;
+  margin-top: 64px;
+  padding-bottom: 90px;
+}
+.equipe-produtiva .card-left {
+  display: none;
+}
+.equipe-produtiva header .media > h3 {
+  /* max-width: 230px; */
+  margin-top: 94px;
+  margin-bottom: 0;
+  padding-right: 16px;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #5f6e76;
+}
+.equipe-produtiva header .media > img {
+  margin-top: 73px;
+}
+.equipe-produtiva header > p {
+  margin-top: 26px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2c404a;
+}
+.equipe-produtiva header > p + p {
+  font-weight: bold;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/*----------*/
+.software-gestao {
+  margin-top: 85px;
+}
+.software-gestao > .container > .row {
+  max-width: 504px;
+  margin: 0;
+  justify-content: center;
+  text-align: center;
+}
+.software-gestao > .container > .row > h3 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #5f6e76;
+}
+.software-gestao > .container > .row > p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2c404a;
+}
+
+/*----------*/
+.gerenciamento-empresa {
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+.gerenciamento-empresa > .container > .row {
+  justify-content: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100%;
+}
+.gerenciamento-empresa header {
+  width: 100%;
+  margin-left: 0;
+}
+.gerenciamento-empresa header > h3 {
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #5f6e76;
+}
+.gerenciamento-empresa header > p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.gerenciamento-empresa img {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.gerenciamento-empresa .form-experimente .form_lead_top {
+  display: block;
+  width: 98%;
+  height: 44px;
+  margin: 15px auto;
+  padding-left: 18px;
+  font-size: 14px;
+  font-family: Gotham, sans-serif;
+  border: 0;
+  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
+  border-radius: 0;
+  outline: 0;
+}
+.gerenciamento-empresa .form-experimente .btn-experimente {
+  width: 100%;
+  height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 700;
+  border-radius: 21px;
+  box-shadow: 0px 3px 6px #5f6e7629;
+}
+
+/*----------*/
+.depoimento-empresas h3 {
+  max-width: 550px;
+  margin-top: 80px;
+  margin-bottom: 45px;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #5f6e76;
+}
+
+/*----------*/
+.parceiros {
+  margin-bottom: 66px;
+}
+
+/*========== sm ==========*/
+
+@media screen and (min-width: 576px) {
+  .ajudar-empresa > .container-fluid > .row .row .card-time {
+    display: block;
+  }
+
+  /*----------*/
+  .depoimento-empresas h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*========== md ==========*/
+
+@media screen and (min-width: 768px) {
+  .ajudar-empresa header > h3 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  /*---------*/
+  .equipe-produtiva {
+    background-color: #fff;
+    margin-top: 175px;
+  }
+  .equipe-produtiva > .container > .row {
+    justify-content: space-between;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100%;
+  }
+  .equipe-produtiva .card-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 348px;
+    margin-right: auto;
+    margin-left: 0;
+    padding: 0;
+  }
+  .equipe-produtiva > .container > .row > header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 50%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    padding-right: 0;
+    text-align: right;
+  }
+  .equipe-produtiva header .media > h3 {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  .equipe-produtiva header p {
+    max-width: 290px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /*----------*/
+  .software-gestao {
+    margin-top: 51px;
+  }
+  .software-gestao > .container > .row > h3 {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  .software-gestao > .container > .row > p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  /*----------*/
+  .equipe-produtiva table {
+    width: 431px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    line-height: 1.3;
+    color: var(--primary);
+    border-collapse: separate;
+    border-spacing: 0 6px;
+  }
+  .equipe-produtiva table thead > tr > th {
+    font-weight: bold;
+    padding-bottom: 7px;
+  }
+  .equipe-produtiva table tbody > tr > th {
+    font-weight: 400;
+  }
+  .equipe-produtiva table tbody tr th img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 0;
+    margin-right: 11px !important;
+    border: 1px solid var(--primary);
+  }
+  .equipe-produtiva table tbody tr td {
+    vertical-align: middle;
+  }
+  .equipe-produtiva table tbody tr {
+    background-color: #d5e9fe;
+    box-shadow: 5px 3px 7px #95959529;
+  }
+  .equipe-produtiva table tbody tr:hover {
+    background-color: #95caff;
+  }
+  .equipe-produtiva table tbody tr th {
+    border-radius: 6px 0 0 6px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  .equipe-produtiva table tbody tr td:nth-child(5) {
+    border-radius: 0 6px 6px 0;
+  }
+
+  /*----------*/
+  .integre-funcionalidades {
+    height: 625px;
+    background-color: #f6f7fb;
+    margin-top: 130px;
+  }
+  .integre-funcionalidades > .container > .row {
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 125px;
+    justify-content: space-between;
+  }
+  .integre-funcionalidades > .container > .row > .container {
+    max-width: 43%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .integre-funcionalidades header > h3 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.14;
+    font-weight: bold;
+    color: #5f6e76;
+  }
+  .integre-funcionalidades header > p {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 11px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: #5f6e76;
+    border-left: 1px solid #aed6ff;
+    cursor: pointer;
+  }
+  .integre-funcionalidades header > p.active {
+    color: var(--primary);
+    padding: 0;
+  }
+  .integre-funcionalidades header > p.active:before {
+    content: "";
+    height: 42px;
+    border-left: 5px solid var(--primary);
+    font-size: 24px;
+    margin: -1px;
+    padding: 4px;
+  }
+
+  .integre-funcionalidades .tab-conteudo {
+    max-width: 53%;
+  }
+  .integre-funcionalidades .tab-conteudo > p {
+    padding-left: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 17px;
+    line-height: 1.17;
+    font-weight: 400;
+    color: #5f6e76;
+  }
+
+  /*----------*/
+  .gerenciamento-empresa {
+    margin-top: 150px;
+  }
+  .gerenciamento-empresa > .container > .row {
+    justify-content: space-between;
+  }
+  .gerenciamento-empresa header {
+    padding: 0;
+    max-width: 50%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .gerenciamento-empresa header > h3 {
+    margin-top: 70px;
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  .gerenciamento-empresa header > p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .gerenciamento-empresa img {
+    max-width: 47%;
+    margin-right: 0;
+    padding: 0;
+  }
+  .gerenciamento-empresa .form-experimente {
+    padding: 0;
+    margin-top: -70px;
+  }
+  .gerenciamento-empresa .form-experimente .form_lead_top {
+    width: 240px;
+    margin: 0;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 10px #00000029;
+  }
+  .gerenciamento-empresa .form-experimente .btn-experimente {
+    width: 195px;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  /*----------*/
+  .depoimento-empresas h3 {
+    margin-top: 150px;
+    font-size: 28px;
+    line-height: 1.14;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 992px) {
+  .topo {
+    padding-bottom: 138px;
+  }
+
+  /*---------*/
+  .cdk-drop-list {
+    max-width: 250px;
+  }
+  .ajudar-empresa > .container-fluid > .row > header {
+    max-width: 380px;
+    margin-right: 0;
+  }
+  .ajudar-empresa header > h3 {
+    margin-top: 174px;
+  }
+  .ajudar-empresa > .container-fluid > .row .row {
+    margin-top: 62px !important;
+    margin-right: 40px !important;
+    margin-left: auto !important;
+  }
+  .ajudar-empresa > .container-fluid > .row .row .card-time {
+    margin-top: 0;
+  }
+
+  /*---------*/
+  .equipe-produtiva .card-left {
+    max-width: 400px;
+    margin-right: 50px;
+    padding-left: 15px;
+  }
+  .equipe-produtiva > .container > .row > header {
+    padding-right: 15px;
+  }
+  .equipe-produtiva > .container > .row > header p {
+    max-width: 465px;
+    font-size: 17px;
+  }
+
+  /*---------*/
+  .integre-funcionalidades {
+    height: 715px;
+    margin-top: 140px;
+  }
+  .integre-funcionalidades > .container > .row > .container {
+    max-width: 50%;
+    padding-left: 15px;
+  }
+  .integre-funcionalidades header > h3 {
+    margin-top: 40px;
+    font-size: 28px;
+  }
+  .integre-funcionalidades header > p {
+    height: 46px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .integre-funcionalidades header > p.active:before {
+    height: 46px;
+  }
+  .integre-funcionalidades .tab-conteudo {
+    max-width: 50%;
+  }
+
+  /*---------*/
+  .gerenciamento-empresa header {
+    padding-left: 15px !important;
+  }
+  .gerenciamento-empresa header h3 {
+    margin-top: 90px;
+  }
+  .gerenciamento-empresa .form-experimente {
+    margin-top: -150px;
+    padding-left: 15px !important;
+  }
+
+  /*----------*/
+  .parceiros {
+    margin-bottom: 120px;
+  }
+}
+
+/* xl */
+@media screen and (min-width: 1200px) {
+  /*----------*/
+  .ajudar-empresa > .container-fluid > .row > header {
+    max-width: 440px;
+    margin-right: 0;
+  }
+  .ajudar-empresa > .container-fluid > .row .row {
+    margin-right: auto !important;
+    margin-left: 70px !important;
+  }
+
+  /*----------*/
+  .equipe-produtiva > .row > header {
+    max-width: 512px;
+    margin-right: 49px;
+  }
+  .equipe-produtiva > .row > .row {
+    min-width: 526px;
+    margin-right: 55px !important;
+  }
+
+  /*---------*/
+  .equipe-produtiva .card-left {
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .equipe-produtiva > .container > .row > header {
+    padding-right: 0;
+  }
+
+  /*---------*/
+  .integre-funcionalidades > .container > .row > .container {
+    max-width: 47%;
+  }
+
+  /*---------*/
+  .gerenciamento-empresa header {
+    padding-left: 0 !important;
+  }
+  .gerenciamento-empresa .form-experimente {
+    margin-top: -160px;
+    padding-left: 0 !important;
+  }
+}

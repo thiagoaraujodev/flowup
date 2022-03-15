@@ -1,0 +1,34 @@
+:host {
+  font-family: Gotham, sans-serif !important;
+}
+.container .row {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3 {
+  margin-top: 34px;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 1.14;
+  font-weight: bold;
+  color: #5f6e76;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 400;
+  color: #2c404a;
+}
+.slick-slide {
+  filter: blur(5px);
+  transform: scale(0.8);
+  transition-duration: 0.2s;
+}
+.slick-slide[tabindex="0"] {
+  filter: none !important;
+  transform: scale(1) !important;
+  transition-duration: 0.5s;
+}

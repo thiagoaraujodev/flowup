@@ -1,1 +1,42 @@
+@import url("https://fonts.cdnfonts.com/css/gotham");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 /* You can add global styles to this file, and also import other style files */
+
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --info: #0eb7c1;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+}
+
+.btn-especialista {
+  color: #fff;
+  background-color: var(--info);
+  border-color: var(--info);
+}
+
+/* .container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+} */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1014px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

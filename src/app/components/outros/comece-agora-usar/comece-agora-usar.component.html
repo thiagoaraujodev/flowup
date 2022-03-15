@@ -1,0 +1,51 @@
+<div class="comece-agora">
+  <div class="container p-0">
+    <div class="row">
+      <header class="container">
+        <h3>Comece agora a usar o Flowup</h3>
+        <p>
+          Configure tudo em poucos minutos, ou entre em contato com o suporte
+          para agendar uma consultoria.
+        </p>
+      </header>
+
+      <div class="form-experimente">
+        <form
+          [formGroup]="formulario"
+          (ngSubmit)="onSubmit()"
+          class="form-inline"
+        >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Insira seu e-mail"
+            formControlName="email"
+            class="form-control form_lead"
+            [ngClass]="{
+              'is-invalid':
+                innerWidth >= 768 &&
+                formulario.invalid &&
+                (formulario.controls.email.touched || submitted)
+            }"
+          />
+
+          <button
+            type="submit"
+            class="btn btn-experimente btn-block"
+            title="Experimente Grátis"
+            [ngClass]="innerWidth >= 768 ? 'btn-info' : 'btn-primary'"
+          >
+            EXPERIMENTE GRÁTIS
+          </button>
+
+          <ng-container *ngIf="formulario.controls.email.touched || submitted">
+            <span class="formulario-invalido" *ngIf="formulario.invalid"
+              >email inválido</span
+            >
+          </ng-container>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,325 @@
+<section class="topo">
+  <app-melhor-software></app-melhor-software>
+</section>
+
+<section class="ajudar-empresa">
+  <div class="container-fluid">
+    <div class="row">
+      <header class="container">
+        <h3>Como o FlowUp pode ajudar a minha empresa?</h3>
+        <p>
+          Com uma gestão de projetos simplificada para você ter o controle total
+          do seu negócio
+        </p>
+      </header>
+
+      <div cdkDropListGroup class="row flex-nowrap ml-auto mr-auto">
+        <div
+          cdkDropList
+          [cdkDropListData]="colunaA"
+          (cdkDropListDropped)="drop($event)"
+          class="card-time col-6 p-0 mr-2"
+        >
+          <img
+            src="./../../../assets/img/andamento.svg"
+            alt="Andamento"
+            class="img-fluid"
+          />
+
+          <ng-container *ngFor="let item of colunaA">
+            <app-card-time cdkDrag cardColor="{{ item }}"></app-card-time>
+          </ng-container>
+        </div>
+
+        <div
+          cdkDropList
+          [cdkDropListData]="colunaB"
+          (cdkDropListDropped)="drop($event)"
+          class="card-time col-6 p-0 ml-1"
+        >
+          <img
+            src="./../../../assets/img/finalizada.svg"
+            alt="Finalizada"
+            class="img-fluid"
+          />
+
+          <ng-container *ngFor="let item of colunaB">
+            <app-card-time cdkDrag cardColor="{{ item }}"></app-card-time>
+          </ng-container>
+        </div>
+
+        <img
+          src="./../../../assets/img/card_time.png"
+          alt="Card em Andamento e Finalizada"
+          class="img-fluid d-sm-none pl-3 pr-3"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="equipe-produtiva">
+  <div class="container p-sm-0">
+    <div class="row mb-5">
+      <div class="container card-left justify-content-md-end">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th scope="col">Usuário</th>
+              <th scope="col"></th>
+              <th scope="col">Início</th>
+              <th scope="col">Fim</th>
+              <th scope="col">Horas</th>
+              <th scope="col">Comentário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" colspan="2">
+                <div class="d-flex">
+                  <img src="./../../../assets/img/people/person4.webp" />
+
+                  <span>
+                    <strong>Ana</strong>
+                    <br />
+                    10/06/2021
+                  </span>
+                </div>
+              </th>
+
+              <td>14:00</td>
+              <td>14:50</td>
+              <td>00:50</td>
+              <td>Daily Meeting</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="2">
+                <div class="d-flex">
+                  <img src="./../../../assets/img/people/person5.webp" />
+
+                  <span>
+                    <strong>Jonas</strong>
+                    <br />
+                    10/06/2021
+                  </span>
+                </div>
+              </th>
+              <td>15:30</td>
+              <td>16:35</td>
+              <td>01:05</td>
+              <td>Conferência</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="2">
+                <div class="d-flex">
+                  <img src="./../../../assets/img/people/person6.webp" />
+
+                  <span>
+                    <strong>Pedro</strong>
+                    <br />
+                    10/06/2021
+                  </span>
+                </div>
+              </th>
+              <td>16:00</td>
+              <td>16:55</td>
+              <td>00:55</td>
+              <td>Reunião</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <header class="container">
+        <div class="media justify-content-between justify-content-md-end">
+          <h3 class="mt-md-0">Equipes mais produtivas</h3>
+
+          <img
+            src="./../../../assets/img/equipe_produtiva.png"
+            alt="Equipes Produtivas"
+            class="img-fluid d-md-none"
+          />
+        </div>
+        <p>
+          Direcione melhor o trabalho da sua equipe. Controle o banco de horas
+          dos funcionários e gerencie os esforços destinados aos projetos.
+        </p>
+
+        <p routerLink="/construcao">Saiba mais sobre gestão de horas</p>
+      </header>
+    </div>
+
+    <div class="row mb-5">
+      <div class="container card-left">
+        <app-card-time cardColor="blue"></app-card-time>
+
+        <div style="margin-left: 28%">
+          <app-card-time cardColor="orange"></app-card-time>
+        </div>
+
+        <app-card-time cardColor="green"></app-card-time>
+      </div>
+
+      <header class="container">
+        <div class="media justify-content-between justify-content-md-end">
+          <h3>Otimize a gestão de tarefas</h3>
+
+          <img
+            src="./../../../assets/img/gestao_tarefas.png"
+            alt="Gestão de Tarefas"
+            class="img-fluid d-md-none"
+          />
+        </div>
+
+        <p>
+          Garanta as entregas dentro dos prazos, gerenciando as tarefas através
+          dos Quadros Kanban ou Diagrama de Gantt. Confira o progresso de cada
+          tarefa, compartilhe materiais e acompanhe o desempenho da equipe em um
+          só lugar.
+        </p>
+
+        <p routerLink="/construcao">Saiba mais sobre gestão de projetos</p>
+      </header>
+    </div>
+
+    <div class="row">
+      <div cdkDropListGroup class="container card-left justify-content-center">
+        <img
+          src="./../../../assets/img/grafico_gestao_financeira.svg"
+          alt="Gestão Financeira"
+          class="img-fluid"
+        />
+      </div>
+
+      <header class="container">
+        <div class="media justify-content-between justify-content-md-end">
+          <h3>Praticidade na sua gestão financeira</h3>
+
+          <img
+            src="./../../../assets/img/gestao_financeira.PNG"
+            alt="Gestão Financeira"
+            class="img-fluid d-md-none"
+          />
+        </div>
+
+        <p>
+          Controle do fluxo de caixa, emita boletos e orçamentos, acompanhe o
+          desempenho financeiro de cada projeto. Além disso, conte com
+          relatórios financeiros em tempo real para agilizar sua rotina.
+        </p>
+
+        <p routerLink="/construcao">Saiba mais sobre gestão financeira</p>
+      </header>
+    </div>
+  </div>
+</section>
+
+<section class="software-gestao">
+  <div class="container d-flex justify-content-center p-sm-0">
+    <div class="row">
+      <h3>Software de gestão feito para você</h3>
+
+      <p>
+        Sistema altamente personalizado para uma gestão de projetos flexível à
+        necessidade de cada empresa.
+      </p>
+    </div>
+  </div>
+
+  <app-carousel></app-carousel>
+</section>
+
+<section class="integre-funcionalidades d-none d-md-block">
+  <div class="container">
+    <div class="row">
+      <header class="container p-0">
+        <h3>Integre várias funcionalidades em um único espaço</h3>
+        <p class="active" (click)="clicked($event, 1)">Dashboard</p>
+        <p (click)="clicked($event, 2)">Modelos de quadros</p>
+        <p (click)="clicked($event, 3)">Automação de tarefas</p>
+        <p (click)="clicked($event, 4)">Reportagem de horas</p>
+        <p (click)="clicked($event, 5)">Compartilhamento de arquivos</p>
+      </header>
+
+      <div class="tab-conteudo">
+        <img
+          src="./../../../assets/img/tab_funcionalidades/{{
+            ImgIntegreFuncionalidade
+          }}"
+          alt="Dashboard"
+          class="img-fluid"
+        />
+        <p>
+          {{ pIntegreFuncionalidade }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="carousel-seguro-intuitivo d-none d-md-block">
+  <app-carousel-seguro-intuitivo></app-carousel-seguro-intuitivo>
+</section>
+
+<section class="gerenciamento-empresa">
+  <div class="container p-0">
+    <div class="row">
+      <header class="container">
+        <h3>O gerenciamento da sua empresa na palma da sua mão</h3>
+        <p>
+          Veja suas tarefas, reporte suas horas, solicite reembolso e muito
+          mais, em qualquer lugar e a qualquer momento. O aplicativo do FlowUp
+          já está disponível para Android e iOs.
+        </p>
+      </header>
+
+      <img
+        src="./../../../assets/img/Visual data-pana.svg"
+        alt="Espemimente o FlowUp"
+        class="img-fluid"
+      />
+    </div>
+
+    <div class="container form-experimente">
+      <form class="form-inline" id="form_experimente_email">
+        <input
+          type="email"
+          class="form-control form_lead_top"
+          placeholder="Insira seu e-mail"
+          name="email_address"
+          id="email_address"
+          value=""
+          required=""
+        />
+        <button
+          type="submit"
+          class="btn btn-info btn-experimente btn-block"
+          title="Experimente Grátis"
+        >
+          EXPERIMENTE GRÁTIS
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="depoimento-empresas">
+  <div class="container">
+    <h3>
+      Aumentamos a produtividade de mais de 1000 clientes em todo o Brasil
+    </h3>
+  </div>
+  <app-depoimento-empresas></app-depoimento-empresas>
+</section>
+
+<section class="conteudos-gratuitos d-none d-md-block">
+  <app-conteudos-gratuitos></app-conteudos-gratuitos>
+</section>
+
+<section class="comece-agora-usar">
+  <app-comece-agora-usar></app-comece-agora-usar>
+</section>
+
+<section class="parceiros">
+  <app-parceiros></app-parceiros>
+</section>

@@ -1,0 +1,27 @@
+<div
+  class="card-time {{ bgColorClass }}"
+  (mouseenter)="startHover()"
+  (mouseleave)="stopHover()"
+>
+  <div class="circle {{ bgColorContentClass }}"></div>
+  <div class="conteudo w-70 {{ bgColorContentClass }}"></div>
+  <div class="conteudo w-20 {{ bgColorContentClass }}"></div>
+  <div class="divider {{ bgColorContentClass }}"></div>
+  <div class="footer">
+    <img
+      src="./../../../assets/img/people/{{ imgPeople }}"
+      class="{{ borderColorClass }}"
+    />
+
+    <div class="timer">
+      <p class="{{ colorClass }}" [ngClass]="startTimer ? '' : 'd-none'">
+        {{ minuto | number: "2.0-0" }}:{{ segundo | number: "2.0-0" }}
+      </p>
+
+      <i
+        class="{{ colorClass }} bi"
+        [ngClass]="startTimer ? 'bi-pause-fill' : 'bi-play-fill'"
+      ></i>
+    </div>
+  </div>
+</div>

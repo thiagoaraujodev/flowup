@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="architecture_black_24dp" transform="translate(0 0.197)">
+    <g id="Grupo_10223" data-name="Grupo 10223">
+      <rect id="Retângulo_18280" data-name="Retângulo 18280" width="20" height="20" transform="translate(0 -0.197)" fill="none"/>
+      <rect id="Retângulo_18281" data-name="Retângulo 18281" width="20" height="20" transform="translate(0 -0.197)" fill="none"/>
+    </g>
+    <g id="Grupo_10225" data-name="Grupo 10225" transform="translate(5.248 2.475)">
+      <g id="Grupo_10224" data-name="Grupo 10224">
+        <path id="Caminho_9314" data-name="Caminho 9314" d="M6.36,17.4l.206,1.832L7.9,17.96l2.286-6.271a3.231,3.231,0,0,1-1.46-.809Z" transform="translate(-6.36 -4.378)" fill="#fff"/>
+        <path id="Caminho_9315" data-name="Caminho 9315" d="M14.46,10.88a3.274,3.274,0,0,1-1.46.809l2.286,6.271,1.337,1.271.215-1.832Z" transform="translate(-7.521 -4.378)" fill="#fff"/>
+        <path id="Caminho_9316" data-name="Caminho 9316" d="M13.9,7.621A2.472,2.472,0,0,0,12.3,4.8V3.825A.828.828,0,0,0,11.475,3h0a.828.828,0,0,0-.825.825V4.8A2.473,2.473,0,1,0,13.9,7.621Zm-2.426.33a.825.825,0,1,1,.825-.825A.828.828,0,0,1,11.475,7.951Z" transform="translate(-6.822 -3)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

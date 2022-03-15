@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="diveder"></div>
+
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+    <div class="col order-1 order-md-0">
+      <h3>Flowup</h3>
+
+      <img
+        src="./../../../../assets/img/icon_facebook.svg"
+        alt="Facebook"
+        role="button"
+        (click)="abrirLink('https://web.facebook.com/flowupgestao/')"
+      />
+
+      <img
+        src="./../../../../assets/img/icon_instagram.svg"
+        alt="Instagram"
+        class="ml-1 mr-1"
+        role="button"
+        (click)="abrirLink('https://www.instagram.com/flowupgestao/')"
+      />
+
+      <img
+        src="./../../../../assets/img/icon_linkedin.svg"
+        alt="LinkedIn"
+        role="button"
+        (click)="abrirLink('https://www.linkedin.com/company/flowupgestao/')"
+      />
+    </div>
+
+    <div class="col">
+      <h3>Produtos</h3>
+
+      <p routerLink="/construcao">Gestão Financeira</p>
+      <p routerLink="/construcao">Gestão de Projetos</p>
+      <p routerLink="/construcao">Gerenciamento de Horas</p>
+      <p routerLink="/construcao">Planos</p>
+      <p routerLink="/construcao">Blog</p>
+    </div>
+
+    <div class="col">
+      <h3>Segmentos</h3>
+
+      <p routerLink="/construcao">Agências de Comunicação</p>
+      <p routerLink="/construcao">Empresas de Tecnologia</p>
+      <p routerLink="/construcao">Empresas Engenharia</p>
+      <p routerLink="/construcao">Agências Marítimas</p>
+    </div>
+
+    <div class="col">
+      <h3>Suporte</h3>
+
+      <p>
+        <img src="./../../../../assets/img/icon_whatsapp.svg" alt="Whatsapp" />
+        (81) 9858-3826
+      </p>
+      <p>suporte@flowup.me</p>
+      <p>Chat</p>
+    </div>
+
+    <div class="col">
+      <h3>Contato</h3>
+
+      <p>
+        <img src="./../../../../assets/img/icon_whatsapp.svg" alt="Whatsapp" />
+        (81) 9858-3826
+      </p>
+      <p>
+        <img src="./../../../../assets/img/icon_telefone.svg" alt="Contato" />
+        (81) 3083.4315
+      </p>
+      <p>suporte@flowup.me</p>
+    </div>
+    <div class="col order-2 order-md-0">
+      <img
+        src="./../../../../assets/img/disponivel_no_appstore.png"
+        alt="Disponível no AppStore"
+        class="mb-3"
+        role="button"
+        (click)="abrirLink('https://apps.apple.com/us/app/flowup/id1486432083')"
+      />
+
+      <img
+        src="./../../../../assets/img/disponivel_no_googleplay.png"
+        alt="Disponível no PlayStore"
+        class=""
+        role="button"
+        (click)="
+          abrirLink(
+            'https://play.google.com/store/apps/details?id=com.mobile.flowup&hl=pt_BR'
+          )
+        "
+      />
+    </div>
+  </div>
+</div>

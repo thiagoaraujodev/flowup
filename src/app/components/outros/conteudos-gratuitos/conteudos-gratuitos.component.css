@@ -1,0 +1,77 @@
+.container > h3 {
+  max-width: 670px;
+  margin: 150px auto 60px auto;
+  font-size: 28px;
+  line-height: 1.14;
+  font-weight: bold;
+  color: #5f6e76;
+  text-align: center;
+}
+span {
+  height: 34px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  font-size: 15px;
+  line-height: 1.66;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 7px;
+}
+.produtividade {
+  background-color: #f6a2c8;
+  color: #2c404a;
+}
+.gestao {
+  background-color: #007eff;
+}
+.colaborador {
+  background-color: #0eb7c1;
+}
+.titulo h3 {
+  max-width: 273px;
+  height: 75px;
+  margin: 10px 0 5px 0;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #5f6e76;
+}
+.titulo p {
+  margin-bottom: 10px;
+  font-size: 11px;
+  line-height: 2.27;
+  font-weight: bold;
+  color: #acafb1;
+}
+.conteudo p {
+  height: 114px;
+  max-width: 307px;
+  font-size: 15px;
+  line-height: 1.33;
+  font-weight: 300;
+  color: #5f6e76;
+}
+button.btn-outline-primary {
+  width: 184px;
+  height: 55px;
+  font-size: 15px;
+  line-height: 1.33;
+  font-weight: 300;
+}
+
+/*========== lg ==========*/
+@media screen and (min-width: 992px) {
+  .titulo h3 {
+    height: 50px;
+  }
+  .conteudo p {
+    height: 76px;
+  }
+}
+
+/*========== xl ==========*/
+@media screen and (min-width: 1200px) {
+  .conteudo p {
+    height: 57px;
+  }
+}

@@ -1,0 +1,30 @@
+h3 {
+  margin-top: 66px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.14;
+  font-weight: bold;
+  color: #5f6e76;
+}
+.parceiros {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+img {
+  opacity: 0.5;
+  max-width: 45% !important;
+}
+img:hover {
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/*========== lg ==========*/
+@media screen and (min-width: 992px) {
+  img {
+    max-width: 48% !important;
+  }
+}

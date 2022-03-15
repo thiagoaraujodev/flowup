@@ -1,6 +1,25 @@
-# FlowUp
+<h1 align="center">
+  <img alt="FlowUp" title="FlowUp" src=".github/logo.svg" width="220px" />
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+<br>
+
+<p align="center">
+  <img alt="FlowUp" src=".github/flowup.png" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido utilizando o  [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
+
+## 💻 Projeto
+
+Este projeto foi replicado do site [FlowUp](https://www.flowup.me/) com a finalidade de estudo visando aprimorar o desenvolvimento de um site em Angular. 
+Todos os direitos são reservados a [FlowUp](https://www.flowup.me/).
+
+
+
+---
 
 ## Development server
 

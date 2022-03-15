@@ -1,0 +1,1185 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="divider-menu d-lg-none"></div>
+
+  <div class="container">
+    <!-- Logo-->
+    <a class="navbar-brand p-0" routerLink="/" (click)="gotoTop()"
+      ><span class="img-logo" alt="Logo FlowUp"></span
+    ></a>
+
+    <button
+      class="navbar-toggler collapsed border-0 pr-0"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarBotaoMenu"
+      aria-controls="navbarBotaoMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div id="navbarBotaoMenu" class="collapse navbar-collapse scroller">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <!-- //li - Conheça o FlowUp -->
+        <li class="nav-item dropdown p-0 m-0">
+          <a
+            class="
+              nav-link
+              dropdown-toggle
+              caret-off
+              justify-content-between
+              align-items-center
+              p-0
+              mr-3 mr-lg-4
+            "
+            href=""
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            (click)="scrollMove('.scroller', 20)"
+          >
+            <span>Conheça o FlowUp</span>
+
+            <span class="arrow d-lg-none">
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+          <div class="dropdown-menu" [ngClass]="status ? 'd-none' : ''">
+            <div class="divider-menu d-none d-lg-block mb-5"></div>
+
+            <div class="container p-0 mb-4">
+              <div class="row col-12 p-0 pl-lg-3 pr-3 mt-3 mb-4">
+                <div class="dropdown-header">
+                  <h2>FUNCIONALIDADES</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Gerenciamento de Projetos</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M18.658,9.663V3h-5.83V5.5h-5V3H2V9.663H7.83v-2.5H9.5v8.329h3.332v2.5h5.83V11.329h-5.83v2.5H11.162V7.165h1.666v2.5ZM6.165,8h-2.5V4.666h2.5Zm8.329,5h2.5v3.332h-2.5Zm0-8.329h2.5V8h-2.5Z"
+                        transform="translate(-0.336 -0.486)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Acompanhe, planeje e faça a gestão dos projetos da sua
+                    empresa de forma prática até o momento da entrega.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Gerenciamento de Tarefas</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      class="float-right"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M3,5v14c0,1.1,0.89,2,2,2h6V3H5C3.89,3,3,3.9,3,5z M9,19H5V5h4V19z"
+                      />
+                      <path
+                        fill="#2c404a"
+                        d="M19,3h-6v8h8V5C21,3.9,20.1,3,19,3z M19,9h-4V5h4V9z"
+                      />
+                      <path
+                        fill="#2c404a"
+                        d="M13,21h6c1.1,0,2-0.9,2-2v-6h-8V21z M15,15h4v4h-4V15z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Organize as suas atividades por projetos, defina prazos,
+                    compartilhe arquivos e receba feedbacks da equipe de maneira
+                    ágil.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Gerenciamento de Horas</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M10.243,2a8.252,8.252,0,1,0,8.26,8.252A8.248,8.248,0,0,0,10.243,2Zm.008,14.853a6.6,6.6,0,1,1,6.6-6.6A6.6,6.6,0,0,1,10.252,16.853Zm.413-10.727H9.426v4.951l4.332,2.6.619-1.015-3.713-2.2Z"
+                        transform="translate(-0.252 -0.252)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Entenda a real produtividade da sua equipe, as entregas de
+                    atividades nos seus projetos e faça uma melhor gestão do
+                    tempo do seu time.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Gerenciamento Financeiro</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M10.658,9.693c-1.8-.5-2.375-1.017-2.375-1.822,0-.923.8-1.567,2.137-1.567,1.409,0,1.932.72,1.979,1.779h1.75a3.327,3.327,0,0,0-2.541-3.228V3H9.233V4.83A3.217,3.217,0,0,0,6.462,7.888c0,1.957,1.512,2.931,3.721,3.5,1.979.508,2.375,1.254,2.375,2.042,0,.585-.388,1.517-2.137,1.517-1.631,0-2.272-.779-2.359-1.779H6.32a3.451,3.451,0,0,0,2.913,3.245V18.25h2.375V16.428a3.049,3.049,0,0,0,2.771-3.008C14.379,11.015,12.455,10.193,10.658,9.693Z"
+                        transform="translate(-0.859 -0.625)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Faça o acompanhamento do seu fluxo de caixa, planeje e
+                    gerencie o financeiro da sua empresa de forma prática com o
+                    FlowUp.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row col-12 p-0 pl-lg-3 pr-3 mt-3 mb-4">
+                <div class="dropdown-header">
+                  <h2>PLANOS</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Starter</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M18.72,7.611a1.616,1.616,0,0,1-1.611,1.611,1.369,1.369,0,0,1-.411-.056l-2.867,2.859a1.423,1.423,0,0,1,.056.419,1.611,1.611,0,1,1-3.222,0,1.423,1.423,0,0,1,.056-.419L8.668,9.971a1.584,1.584,0,0,1-.838,0L4.165,13.644a1.369,1.369,0,0,1,.056.411,1.611,1.611,0,1,1-1.611-1.611,1.369,1.369,0,0,1,.411.056L6.695,8.835a1.423,1.423,0,0,1-.056-.419,1.611,1.611,0,0,1,3.222,0,1.423,1.423,0,0,1-.056.419l2.054,2.054a1.584,1.584,0,0,1,.838,0l2.859-2.867a1.369,1.369,0,0,1-.056-.411,1.611,1.611,0,1,1,3.222,0Z"
+                        transform="translate(-1 -6)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Para empresas que precisam de poucas ferramentas para
+                    gerenciar melhor o seu negócio. Até 2 usuários.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Intermediate</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M13.523,6l1.885,2.038L11.391,12.38,8.1,8.821,2,15.423l1.161,1.255L8.1,11.339,11.391,14.9l5.185-5.6,1.885,2.038V6Z"
+                        transform="translate(-0.231 -1.339)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Para empresas que precisam de mais ferramentas financeiras
+                    para o seu dia a dia. Até 6 usuários.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Enterprise</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M10.906,4.5A5.667,5.667,0,0,1,15.7,9.293h2.453A8.1,8.1,0,0,0,10.906,2.05V4.5Zm4.793,6.41A5.667,5.667,0,0,1,10.906,15.7v2.452a8.1,8.1,0,0,0,7.247-7.243H15.7ZM9.287,15.7a5.657,5.657,0,0,1,0-11.2V2.05a8.093,8.093,0,0,0,0,16.106Z"
+                        transform="translate(-0.1 -0.103)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Para empresas que precisam de um gerenciamento mais robusto
+                    e completo. Até 10 usuários.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-2 pl-3 pr-3 mt-1 mr-5"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3 class="card-menu-conferir-plano">
+                      Conferir todos os planos
+                    </h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 18"
+                      class="float-right"
+                    >
+                      <path
+                        d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"
+                        fill="var(--primary)"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- //.li -->
+
+        <!-- //li - Recursos -->
+        <li class="nav-item dropdown p-0 m-0">
+          <a
+            class="
+              nav-link
+              dropdown-toggle
+              caret-off
+              justify-content-between
+              align-items-center
+              p-0
+              mr-3 mr-lg-4
+            "
+            href=""
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            (click)="scrollMove('.scroller', 80)"
+          >
+            <span>Recursos</span>
+
+            <span class="arrow d-lg-none">
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+          <div class="dropdown-menu" [ngClass]="status ? 'd-none' : ''">
+            <div class="divider-menu d-none d-lg-block mb-5"></div>
+
+            <div class="container p-0 mb-4">
+              <div class="row col-12 p-0 pl-lg-3 pr-3 mt-3 mb-4">
+                <div class="dropdown-header">
+                  <h2>RECURSOS</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Trabalho Remoto</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M17.667,2h-15A1.672,1.672,0,0,0,1,3.667v10a1.672,1.672,0,0,0,1.667,1.667H8.5l-1.667,2.5v.833H13.5v-.833l-1.667-2.5h5.833a1.672,1.672,0,0,0,1.667-1.667v-10A1.672,1.672,0,0,0,17.667,2Zm0,10h-15V3.667h15Z"
+                        transform="translate(-0.167 -0.333)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Escritório, home-office ou externo, acesse e gerencie suas
+                    demandas de qualquer lugar.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Relatórios</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      class="float-right"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M12 9h4c.55 0 1-.45 1-1s-.45-1-1-1h-4c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h4c.55 0 1-.45 1-1s-.45-1-1-1h-4c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h4c.55 0 1-.45 1-1s-.45-1-1-1h-4c-.55 0-1 .45-1 1s.45 1 1 1zM7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7zM20 3H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm-1 16H5V5h14v14z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Acompanhe os resultados dos seus projetos e crie métricas
+                    para a sua equipe.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Agile e Scrum</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <circle cx="20" cy="12" r="2" />
+                      <circle cx="4" cy="12" r="2" />
+                      <circle cx="12" cy="20" r="2" />
+                      <path
+                        d="M7.89,14.65l-2.94,2.93c-0.39,0.39-0.39,1.02,0,1.41s1.02,0.39,1.41,0l2.94-2.93c0.39-0.38,0.39-1.02,0-1.41 C8.91,14.26,8.28,14.26,7.89,14.65z"
+                      />
+                      <path
+                        d="M6.41,4.94C6.02,4.55,5.39,4.55,5,4.94C4.61,5.33,4.61,5.96,5,6.35l2.93,2.94c0.39,0.39,1.02,0.39,1.42,0 C9.73,8.9,9.73,8.27,9.34,7.88L6.41,4.94z"
+                      />
+                      <path
+                        d="M16.12,14.65c-0.39-0.39-1.02-0.39-1.42,0c-0.39,0.39-0.39,1.02,0,1.41L17.64,19c0.39,0.39,1.02,0.39,1.41,0 s0.39-1.02,0-1.41L16.12,14.65z"
+                      />
+                      <path
+                        d="M16.06,9.33l2.99-2.98c0.39-0.4,0.39-1.03,0-1.42c-0.39-0.39-1.02-0.39-1.41,0l-2.99,2.98c-0.39,0.39-0.39,1.02,0,1.42 C15.04,9.72,15.67,9.72,16.06,9.33z"
+                      />
+                      <circle cx="12" cy="4" r="2" />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Possibilite mais agilidade nos seus processos e obtenha
+                    melhores resultados.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Quadros Kanban</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M15,3H5C3.9,3,3.01,3.9,3.01,5L3,19c0,1.1,0.89,2,1.99,2H19c1.1,0,2-0.9,2-2V9L15,3z M5,19V5h9v5h5v9H5z M9,8 c0,0.55-0.45,1-1,1S7,8.55,7,8s0.45-1,1-1S9,7.45,9,8z M9,12c0,0.55-0.45,1-1,1s-1-0.45-1-1s0.45-1,1-1S9,11.45,9,12z M9,16 c0,0.55-0.45,1-1,1s-1-0.45-1-1s0.45-1,1-1S9,15.45,9,16z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Personalize Quadros Kanban no FlowUp e acompanhe o progresso
+                    dos seus projetos
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Diagrama de Gannt</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M17 16l-4-4V8.82c1.35-.49 2.26-1.89 1.93-3.46-.25-1.18-1.23-2.12-2.42-2.32C10.63 2.73 9 4.17 9 6c0 1.3.84 2.4 2 2.82V12l-4 4H4c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-2.05l4-4.2 4 4.2V20c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-3z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Crie diagramas de Gantt e acompanhe o cronograma de cada
+                    etapa do projeto
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Dashboard</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M19 15v4H5v-4h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 18.5c-.82 0-1.5-.67-1.5-1.5s.68-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM19 5v4H5V5h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 8.5c-.82 0-1.5-.67-1.5-1.5S6.18 5.5 7 5.5s1.5.68 1.5 1.5S7.83 8.5 7 8.5z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Tenha uma visão geral de tudo que acontece com seus projetos
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Aplicativo</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M15.5 1h-8C6.12 1 5 2.12 5 3.5v17C5 21.88 6.12 23 7.5 23h8c1.38 0 2.5-1.12 2.5-2.5v-17C18 2.12 16.88 1 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Acesse o Aplicativo do FlowUp no seu celular para gerir suas
+                    atividades de onde estiver
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Compartilhamento de Arquivos</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Compartilhe arquivos entre a sua equipe e envie para
+                    aprovação dos seus clientes com mais praticidade
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Produtividade</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M18 9l-1.41-1.42L10 14.17l-2.59-2.58L6 13l4 4zm1-6h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04-.39.08-.74.28-1.01.55-.18.18-.33.4-.43.64-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Economize seu tempo definindo modelos, criando automações e
+                    muito mais
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Fluxo de Caixa</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M13.057,8.8a.851.851,0,1,1,.851.851A.853.853,0,0,1,13.057,8.8ZM7.1,7.954h4.253v-1.7H7.1ZM19.011,6.678v5.928l-2.4.8-1.429,4.755H10.506v-1.7H8.8v1.7H4.126S2,10.965,2,8.379A4.675,4.675,0,0,1,6.678,3.7h4.253a4.249,4.249,0,0,1,3.4-1.7,1.274,1.274,0,0,1,1.276,1.276,1.191,1.191,0,0,1-.1.493,4.111,4.111,0,0,0-.272.978l1.931,1.931Zm-1.7,1.7H16.46L13.483,5.4A6.135,6.135,0,0,1,13.7,3.778,2.565,2.565,0,0,0,11.926,5.4H6.678A2.98,2.98,0,0,0,3.7,8.379a46.475,46.475,0,0,0,1.71,8.08H7.1v-1.7h5.1v1.7h1.71l1.318-4.38,2.075-.7Z"
+                        transform="translate(-2 -2)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Acompanhe o fluxo de caixa da sua empresa de forma eficiente
+                    e simples.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Orçamentos e Vendas</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M14,2H6C4.9,2,4,2.9,4,4v16c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8L14,2z M6,20V4h7v4h5v12H6z M11,19h2v-1h1 c0.55,0,1-0.45,1-1v-3c0-0.55-0.45-1-1-1h-3v-1h4v-2h-2V9h-2v1h-1c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h3v1H9v2h2V19z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Emita orçamentos personalizados e transforme esses
+                    orçamentos em vendas com um clique.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Emissão de Boletos</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Emita boletos e envie automaticamente para os seus clientes.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Relatórios Financeiros</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2 2H5V5h14v14zm0-16H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Contas a pagar, contas a receber, DRE, fluxo de caixa,
+                    lucratividade do projeto e muito mais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- //.li -->
+
+        <!-- //li - Equipes e Times -->
+        <li class="nav-item dropdown p-0 m-0">
+          <a
+            class="
+              nav-link
+              dropdown-toggle
+              caret-off
+              justify-content-between
+              align-items-center
+              p-0
+              mr-3 mr-lg-4
+            "
+            href=""
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            (click)="scrollMove('.scroller', 160)"
+          >
+            <span>Equipes e Times</span>
+
+            <span class="arrow d-lg-none">
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+          <div class="dropdown-menu" [ngClass]="status ? 'd-none' : ''">
+            <div class="divider-menu mb-5"></div>
+
+            <div class="container p-0 mb-4">
+              <div class="row col-12 p-0 pl-lg-3 pr-3 mt-3 mb-4">
+                <div class="dropdown-header">
+                  <h2>EQUIPES E TIMES</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Agências de Marketing & Publicidade</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M18,11c0,0.67,0,1.33,0,2c1.2,0,2.76,0,4,0c0-0.67,0-1.33,0-2C20.76,11,19.2,11,18,11z"
+                      />
+                      <path
+                        fill="#2c404a"
+                        d="M16,17.61c0.96,0.71,2.21,1.65,3.2,2.39c0.4-0.53,0.8-1.07,1.2-1.6c-0.99-0.74-2.24-1.68-3.2-2.4 C16.8,16.54,16.4,17.08,16,17.61z"
+                      />
+                      <path
+                        fill="#2c404a"
+                        d="M20.4,5.6C20,5.07,19.6,4.53,19.2,4c-0.99,0.74-2.24,1.68-3.2,2.4c0.4,0.53,0.8,1.07,1.2,1.6 C18.16,7.28,19.41,6.35,20.4,5.6z"
+                      />
+                      <path
+                        fill="#2c404a"
+                        d="M4,9c-1.1,0-2,0.9-2,2v2c0,1.1,0.9,2,2,2h1v4h2v-4h1l5,3V6L8,9H4z M9.03,10.71L11,9.53v4.94l-1.97-1.18L8.55,13H8H4v-2h4 h0.55L9.03,10.71z"
+                      />
+                      <path
+                        fill="#2c404a"
+                        d="M15.5,12c0-1.33-0.58-2.53-1.5-3.35v6.69C14.92,14.53,15.5,13.33,15.5,12z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Gerencie suas campanhas, as horas da sua equipe e o
+                    financeiro da sua agência: tudo em um software só.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Consultorias</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      class="float-right"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M14,2H6C4.9,2,4.01,2.9,4.01,4L4,20c0,1.1,0.89,2,1.99,2H18c1.1,0,2-0.9,2-2V8L14,2z M18,20H6V4h7v5h5V20z M8.82,13.05 L7.4,14.46L10.94,18l5.66-5.66l-1.41-1.41l-4.24,4.24L8.82,13.05z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Conheça um software completo e flexível, ideal para a gestão
+                    de projetos de sua consultoria.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Escritórios de Arquitetura</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M6.36,18.78L6.61,21l1.62-1.54l2.77-7.6c-0.68-0.17-1.28-0.51-1.77-0.98L6.36,18.78z"
+                      />
+                      <path
+                        d="M14.77,10.88c-0.49,0.47-1.1,0.81-1.77,0.98l2.77,7.6L17.39,21l0.26-2.22L14.77,10.88z"
+                      />
+                      <path
+                        d="M15,8c0-1.3-0.84-2.4-2-2.82V3h-2v2.18C9.84,5.6,9,6.7,9,8c0,1.66,1.34,3,3,3S15,9.66,15,8z M12,9c-0.55,0-1-0.45-1-1 c0-0.55,0.45-1,1-1s1,0.45,1,1C13,8.55,12.55,9,12,9z"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Diversas funcionalidades para trazer agilidade,
+                    lucratividade e sucesso para os seus projetos.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Escritórios de Engenharia</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M18.923,16.544,15.429,13.05l-1.5,1.5,3.494,3.494a1.054,1.054,0,0,0,1.5,0A1.067,1.067,0,0,0,18.923,16.544Z"
+                        transform="translate(-5.875 -5.668)"
+                        fill="#2c404a"
+                      />
+                      <path
+                        d="M13.226,7.837A2.478,2.478,0,0,0,15.7,5.362a2.444,2.444,0,0,0-.29-1.132L13.5,6.14,12.448,5.086l1.91-1.91a2.444,2.444,0,0,0-1.132-.29,2.478,2.478,0,0,0-2.475,2.475,2.412,2.412,0,0,0,.149.82L9.591,7.491,8.332,6.232h0a.7.7,0,0,0,0-1l-.5-.5,1.5-1.5a2.121,2.121,0,0,0-3,0l-1.994,2a.7.7,0,0,0,0,1l.5.5h-1.8a.475.475,0,0,0-.354.149.5.5,0,0,0,0,.707l1.8,1.8a.5.5,0,0,0,.707,0,.5.5,0,0,0,.149-.354v-1.8l.5.5a.7.7,0,0,0,1,0L8.092,8.99,3.6,13.481a1.054,1.054,0,0,0,0,1.5h0a1.054,1.054,0,0,0,1.5,0l7.3-7.291A2.485,2.485,0,0,0,13.226,7.837Z"
+                        transform="translate(-2.54 -2.613)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Ganhe flexibilidade, agilidade e controle sobre os seus
+                    projetos com um software completo para a sua empresa.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Empresas de Tecnologia</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Trabalhe de qualquer lugar, a qualquer hora. Gerencie seus
+                    projetos, as horas de sua equipe e o financeiro em um único
+                    sistema.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Shipping Services</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#2c404a"
+                        d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Gerencie os atendimentos e as finanças da agência de forma
+                    100% integrada e online.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- //.li -->
+
+        <!-- //li - Planos e Preços -->
+        <li class="nav-item dropdown p-0 m-0">
+          <a
+            class="
+              nav-link
+              dropdown-toggle
+              caret-off
+              justify-content-between
+              align-items-center
+              p-0
+              mr-3 mr-lg-4
+            "
+            href=""
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            (click)="scrollMove('.scroller', 220)"
+          >
+            <span>Planos e Preços</span>
+
+            <span class="arrow d-lg-none">
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+          <div class="dropdown-menu" [ngClass]="status ? 'd-none' : ''">
+            <div class="divider-menu d-none d-lg-block mb-5"></div>
+
+            <div class="container p-0 mb-4">
+              <div class="row col-12 p-0 pl-lg-3 pr-3 mt-3 mb-4">
+                <div class="dropdown-header">
+                  <h2>PLANOS</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Starter</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M18.72,7.611a1.616,1.616,0,0,1-1.611,1.611,1.369,1.369,0,0,1-.411-.056l-2.867,2.859a1.423,1.423,0,0,1,.056.419,1.611,1.611,0,1,1-3.222,0,1.423,1.423,0,0,1,.056-.419L8.668,9.971a1.584,1.584,0,0,1-.838,0L4.165,13.644a1.369,1.369,0,0,1,.056.411,1.611,1.611,0,1,1-1.611-1.611,1.369,1.369,0,0,1,.411.056L6.695,8.835a1.423,1.423,0,0,1-.056-.419,1.611,1.611,0,0,1,3.222,0,1.423,1.423,0,0,1-.056.419l2.054,2.054a1.584,1.584,0,0,1,.838,0l2.859-2.867a1.369,1.369,0,0,1-.056-.411,1.611,1.611,0,1,1,3.222,0Z"
+                        transform="translate(-1 -6)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+                  <p class="m-0">
+                    Para empresas que precisam de poucas ferramentas para
+                    gerenciar melhor o seu negócio. Até 2 usuários.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Intermediate</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      class="float-right"
+                    >
+                      <path
+                        d="M13.523,6l1.885,2.038L11.391,12.38,8.1,8.821,2,15.423l1.161,1.255L8.1,11.339,11.391,14.9l5.185-5.6,1.885,2.038V6Z"
+                        transform="translate(-0.231 -1.339)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Para empresas que precisam de mais ferramentas financeiras
+                    para o seu dia a dia. Até 6 usuários.
+                  </p>
+                </div>
+
+                <div
+                  class="card-menu p-3 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3>Enterprise</h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      class="float-right"
+                    >
+                      <path
+                        d="M10.906,4.5A5.667,5.667,0,0,1,15.7,9.293h2.453A8.1,8.1,0,0,0,10.906,2.05V4.5Zm4.793,6.41A5.667,5.667,0,0,1,10.906,15.7v2.452a8.1,8.1,0,0,0,7.247-7.243H15.7ZM9.287,15.7a5.657,5.657,0,0,1,0-11.2V2.05a8.093,8.093,0,0,0,0,16.106Z"
+                        transform="translate(-0.1 -0.103)"
+                        fill="#2c404a"
+                      />
+                    </svg>
+                  </div>
+
+                  <p class="m-0">
+                    Para empresas que precisam de um gerenciamento mais robusto
+                    e completo. Até 10 usuários.
+                  </p>
+                </div>
+              </div>
+
+              <div class="w-100 d-none d-lg-block"></div>
+
+              <div class="row">
+                <div
+                  class="card-menu p-2 pl-3 pr-3 mt-1 mr-1"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse.show"
+                  routerLink="/construcao"
+                  (click)="closeHover()"
+                >
+                  <div class="card-menu-header">
+                    <h3 class="card-menu-conferir-plano">
+                      Conferir todos os planos
+                    </h3>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 18"
+                      class="float-right"
+                    >
+                      <path
+                        d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"
+                        fill="var(--primary)"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- //.li -->
+
+        <li class="nav-item dropdown p-0 m-0 mr-lg-3">
+          <button
+            type="button"
+            class="btn btn-info btn-especialista btn-block mt-4 mt-lg-0"
+            title="Fale com um Especialista"
+          >
+            Fale com um Especialista
+          </button>
+        </li>
+
+        <li class="nav-item dropdown p-0 m-0">
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            (click)="abrirLink('https://time.flowup.me/Authentication/Login')"
+            title="Login"
+          >
+            Login
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
